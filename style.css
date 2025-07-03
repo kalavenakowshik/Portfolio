@@ -212,7 +212,7 @@ nav ul li a:hover::after {
 }
 .work {
     position: relative;
-    width: 250px;
+    width: 280px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
@@ -232,7 +232,7 @@ nav ul li a:hover::after {
     display: block;
 }
 .work h2 {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin: 0;
