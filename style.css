@@ -208,11 +208,11 @@ nav ul li a:hover::after {
     gap: 35px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px 0;
+    padding: 30px 0;
 }
 .work {
     position: relative;
-    width: 280px;
+    width: 250px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
