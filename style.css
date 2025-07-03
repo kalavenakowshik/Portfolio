@@ -207,8 +207,8 @@ nav ul li a:hover::after {
     display: flex;
     gap: 35px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 30px 0;
+    justify-content: center;
+    padding: 25px 0;
 }
 .work {
     position: relative;
