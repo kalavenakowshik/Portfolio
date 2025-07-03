@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo4.png" class="logo" data-aos="fade-right" data-aos-duration="1000">
+                <ul class="nav-links" data-aos="fade-left" data-aos-duration="1000">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#my-work">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text" data-aos="fade-up" data-aos-duration="1000">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Kowshik</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar 
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <ul>
+            <li><a href="#header" onclick="toggleSidebar()">Home</a></li>
+            <li><a href="#about" onclick="toggleSidebar()">About</a></li>
+            <li><a href="#services" onclick="toggleSidebar()">Service</a></li>
+            <li><a href="#my-work" onclick="toggleSidebar()">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
+        </ul>
+    </div>-->
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="Your Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" data-aos="fade-up" data-aos-duration="1000">About Me</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000">Detail-oriented B.Tech student specializing in AI and Machine Learning, proficient in developing data-driven applications and web solutions.</p>
+
+                    <div class="tab-titles" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="tab-links active-link" data-tab="Skills">Skills</p>
+                        <p class="tab-links" data-tab="Experience">Experience</p>
+                        <p class="tab-links" data-tab="Education">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills" data-aos="fade-up" data-aos-duration="1000">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Developing Web Apps</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience" data-aos="fade-up" data-aos-duration="1000">
+                        <ul>
+                            <li><span>2025</span><br>UI UX designer</li>
+                            <li><span>2024</span><br>Internship at MSME</li>
+                            <li><span>2022</span><br>Internship at NSIC on CNC</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2023</span><br>Diploma in Mechanical</li>
+                            <li><span>2026</span><br>Btech in AI/ML from HITAM</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-right" data-aos-duration="1000">My Services</h1>
+            <div class="services-list" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating modern, responsive web interfaces.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Enhancing user experience with intuitive designs.</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Building mobile apps for Android and iOS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+ <section id="my-work" data-aos="fade-left" data-aos-duration="1000">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      
+      <!-- Project 1 -->
+      <div class="work">
+        <img src="images/work-1.jpg" alt="Project 1">
+        <h2>House Price Predictor</h2>
+        <div class="work-details">
+          <span class="close-work">×</span>
+          <h3>House Price Prediction using Machine Learning</h3>
+          <p><strong>Overview:</strong> This project predicts house prices based on area, BHK type, and year using a regression model trained on historical data.</p>
+          <ul>
+            <li><strong>Tools Used:</strong> Python, Pandas, NumPy, scikit-learn</li>
+            <li><strong>Model:</strong> Linear Regression</li>
+            <li><strong>Input Features:</strong> Area name, Flat size (1BHK/2BHK/etc.), Year built</li>
+            <li><strong>Output:</strong> Predicted house price</li>
+          </ul>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Accepts CSV file input with historical pricing data</li>
+            <li>Interactive input for area and BHK selection</li>
+            <li>Outputs predicted price dynamically</li>
+          </ul>
+          <p><strong>Use Case:</strong> Helps users estimate property prices before purchase or sale.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="work">
+        <img src="images/work-2.jpg" alt="Project 2">
+        <h2>AI PDF Chatbot</h2>
+        <div class="work-details">
+          <span class="close-work">×</span>
+          <h3>AI-based PDF Question Answering Chatbot</h3>
+          <p><strong>Overview:</strong> A chatbot that understands and answers questions from uploaded PDF files using NLP techniques.</p>
+          <ul>
+            <li><strong>Tools Used:</strong> Python, Flask, PyMuPDF, Transformers</li>
+            <li><strong>Features:</strong> PDF parsing, question answering</li>
+            <li><strong>Output:</strong> Textual answers extracted from PDF context</li>
+          </ul>
+          <p><strong>Use Case:</strong> Students and researchers can interactively query study material.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="work">
+        <img src="images/work-3.jpg" alt="Project 3">
+        <h2>Portfolio Website</h2>
+        <div class="work-details">
+          <span class="close-work">×</span>
+          <h3>Personal Portfolio</h3>
+          <p><strong>Overview:</strong> A fully responsive and interactive portfolio site built using HTML, CSS, and JavaScript.</p>
+          <ul>
+            <li><strong>Features:</strong> Project showcase, contact form, service highlights</li>
+            <li><strong>Responsive:</strong> Fully adaptable on all devices</li>
+          </ul>
+          <p><strong>Use Case:</strong> Showcasing developer skills and projects to recruiters and clients.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <a href="mailto:kkalavenakowshik@gmail.com" class="email-link">
+                    <i class="fas fa-envelope fa-2x"></i> kkalavenakowshik@gmail.com
+                </a>
+                <p><i class="fas fa-phone"></i> 9666561756</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ft.kowshik/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/Kalavena-Kowshik/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form name="submit-to-google-sheet" id="contactForm">
+                    <input type="text" name="entry.1732708669" placeholder="Your Name" required>
+                    <input type="email" name="entry.1810510264" placeholder="Your Email" required>
+                    <textarea name="entry.1340175467" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="form-status"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <p>&copy; <span id="year"></span> Kalavena Kowshik. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Modal for Project Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-box">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+  
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
