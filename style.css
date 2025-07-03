@@ -205,7 +205,7 @@ nav ul li a:hover::after {
 }
 .work-list {
     display: flex;
-    gap: 35px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px 0;
