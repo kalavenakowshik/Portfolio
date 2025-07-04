@@ -434,23 +434,74 @@ nav ul li a:hover::after {
     }
 }
 /* ========== Mobile Responsiveness ========== */
+
 @media screen and (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10px; /* reduced from 20px to move everything left */
+  position: relative;
   }
 
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Hamburger icon */
+  .menu-icon {
+  display: block;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px; /* push it slightly left if needed */
+  }
+
+
+  /* Navigation menu (initially hidden) */
   .nav-links {
+    display: none;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    padding: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent */
+    backdrop-filter: blur(5px);     /* glass effect */
+    z-index: 10;
   }
 
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  /* Move header text downward on home page */
   .header-text {
     text-align: center;
-    padding-top: 80px;
+    margin-top: 300px;
+    padding: 0 20px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+    margin-bottom: 12px;
   }
 
   .container {
@@ -464,8 +515,8 @@ nav ul li a:hover::after {
 
   .about-col-1 img {
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 350px;
+    margin: 20px auto;
     display: block;
   }
 
@@ -473,10 +524,13 @@ nav ul li a:hover::after {
     text-align: center;
   }
 
+  /* 📚 Stack Skills / Experience / Education vertically */
   .tab-titles {
-    justify-content: center;
-    flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   }
+
 
   .tab-links {
     margin: 10px 5px;
@@ -498,6 +552,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     gap: 20px;
   }
+  
 
   .work img {
     width: 100%;
@@ -516,24 +571,32 @@ nav ul li a:hover::after {
     text-align: center;
   }
 
-  .contactForm form {
-    width: 100%;
-  }
+.contactForm form input,
+.contactForm form textarea {
+  width: 85%;
+  max-width: 320px;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+}
 
-  .contactForm form input,
-  .contactForm form textarea {
-    width: 90%;
-    margin: 10px auto;
-  }
-
+.contactForm form button.btn {
+  width: 60%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  display: block;
+}
   .modal-box {
-    width: 95%;
+    width: 50%;
     max-height: 90vh;
     overflow-y: auto;
   }
 }
-
-
 
 
 
