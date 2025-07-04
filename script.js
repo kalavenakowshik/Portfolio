@@ -76,3 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   });
 });
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
