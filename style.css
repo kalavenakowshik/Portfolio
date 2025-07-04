@@ -433,6 +433,105 @@ nav ul li a:hover::after {
         display: hide;
     }
 }
+/* ========== Mobile Responsiveness ========== */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .header-text {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-col-2 {
+    text-align: center;
+  }
+
+  .tab-titles {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tab-links {
+    margin: 10px 5px;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .services-list div {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .work-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-left,
+  .contactForm {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactForm form {
+    width: 100%;
+  }
+
+  .contactForm form input,
+  .contactForm form textarea {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .modal-box {
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
 
 
 
