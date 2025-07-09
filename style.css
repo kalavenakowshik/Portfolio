@@ -1,7 +1,9 @@
 html, body {
   overflow-x: hidden;
 }
-
+.menu-icon {
+  display: none;
+}
 /* Reset and Base Styles */
 * {
     margin: 0;
