@@ -433,6 +433,9 @@ nav ul li a:hover::after {
         display: hide;
     }
 }
+.menu-icon {
+  display: none;
+}
 /* ========== Mobile Responsiveness ========== */
 
 @media screen and (max-width: 768px) {
