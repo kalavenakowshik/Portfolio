@@ -600,7 +600,11 @@ nav ul li a:hover::after {
     overflow-y: auto;
   }
 }
-
+.work.expanded {
+    z-index: 10;
+    transform: scale(1.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
 
 
 
