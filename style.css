@@ -136,7 +136,6 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 {
-  font-size: 30px;
   flex-basis: 60%;
   text-align: left;
 }
