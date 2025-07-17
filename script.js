@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   // Project Box Expand/Collapse
   const works = document.querySelectorAll('.work');
   works.forEach(work => {
@@ -76,7 +75,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   });
 });
+
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   navLinks.classList.toggle('active');
 }
+
+/* #For rcramble letters
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*";
+
+  document.querySelectorAll('.scramble').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      let iteration = 0;
+      const originalText = el.innerText;
+      const textLength = originalText.length;
+
+      const interval = setInterval(() => {
+        el.innerText = originalText
+          .split("")
+          .map((char, index) => {
+            if (index < iteration) return originalText[index];
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join("");
+
+        if (iteration >= textLength) clearInterval(interval);
+        iteration += 1 / 2; // Speed of animation (lower = slower)
+      }, 50); // Speed of scrambling
+    });
+  });
+*/
